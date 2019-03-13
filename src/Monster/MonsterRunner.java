@@ -17,6 +17,7 @@ public class MonsterRunner
 		String name = keyboard.next();
                 System.out.print("Enter skeleton's size :: ");
 		int size = keyboard.nextInt();
+                keyboard.nextLine();
 		
 		//instantiate monster one
                 Skeleton s1 = new Skeleton(name, size, 1);
@@ -26,9 +27,10 @@ public class MonsterRunner
 		String n = keyboard.next();
                 System.out.print("Enter ghost's size :: ");
 		int s = keyboard.nextInt();
+                keyboard.nextLine();
 		
 		//instantiate monster two
-                Ghost s2 = new Ghost(n, s, 2);
+                Ghost s2 = new Ghost(n, s, 1);
                 
                 System.out.println("\n");
                 System.out.println(s1.toString());

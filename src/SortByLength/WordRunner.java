@@ -15,17 +15,16 @@ public class WordRunner
 		Scanner file = new Scanner(new File("words.dat"));
 
 		int size = file.nextInt();
-		file.nextLine();
+		//file.nextLine();
 		
-
-
-
-
-
-
-
-
-
+                Comparable[] arr = new Comparable[size];
+                for(int i = 0; i<arr.length; i++){
+                    arr[i] = file.nextLine();
+                }
+                Arrays.sort(arr);
+                for(int n = 0; n<arr.length; n++){
+                    System.out.println(arr[n]);
+                }
 
 
 	}
