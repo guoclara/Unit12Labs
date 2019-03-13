@@ -1,13 +1,18 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Monster;
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name -
 
 import Monster.Monster;
 import static java.lang.System.*; 
+/**
+ *
+ * @author guoc6943
+ */
+public class Ghost implements Monster{
 
-public class Skeleton implements Monster
-{
 	//add instance variables	
     private String name;
     private int size;
@@ -15,7 +20,7 @@ public class Skeleton implements Monster
     
 
 	//add a constructor
-    public Skeleton(String n, int s, int o){
+    public Ghost(String n, int s, int o){
         name = n;
         size = s;
         order = o;
@@ -40,6 +45,7 @@ public class Skeleton implements Monster
     }
 	//add a toString
     public String toString(){
-        return "Skeleton "+order+" - "+name+" "+size;
+        return "Ghost "+order+" - "+name+" "+size;
     }
-}
+}   
+
