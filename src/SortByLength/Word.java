@@ -20,28 +20,14 @@ public class Word implements Comparable<Word>
             } else if (word.length()<rhs.word.length()){
                 return -1;
             } else{
-                int bound = 0;
-                if(word.length()<rhs.word.length()){
-                    bound = word.length();
-                }else{
-                    bound = rhs.word.length();
-                }
-                for(int i = 0; i<bound; i++){
-                    if(word.charAt(i)>rhs.word.charAt(i)){
-                        return 1;
-                    } else if(word.charAt(i)>rhs.word.charAt(i)){
-                        return -1;
-                    } else if(i==bound - 1 && word.length()==rhs.word.length()){
-                        return 0;
-                    } else if(i==bound - 1 && word.length()!=rhs.word.length()){
-                        if(word.length()<rhs.word.length()){
-                            return 1;
-                        } else{
-                            return -1;
-                        }
-                    }
-                }
-            } return 0;
+                if(word.compareTo(rhs.word)>0){
+			return 1;
+		} else if(word.compareTo(rhs.word<0){
+			return -1;
+		} else{
+			return 0;
+		}
+            }
             //return this.word.length() - rhs.toString().length();
 	}
 
