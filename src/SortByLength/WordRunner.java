@@ -17,14 +17,23 @@ public class WordRunner
 		int size = file.nextInt();
 		//file.nextLine();
 		
-                Comparable[] arr = new Comparable[size];
-                for(int i = 0; i<arr.length; i++){
-                    arr[i] = file.nextLine();
+                ArrayList<Word> arr = new ArrayList<Word>();
+                for(int i = 0; i<arr.size(); i++){
+                    arr.add(new Word(file.nextLine()));
                 }
-                Arrays.sort(arr);
-                for(int n = 0; n<arr.length; n++){
-                    System.out.println(arr[n]);
-                }
+                for(int x = 0; x<size; x++){
+			for(int n = 1; n<size;n++){
+				if(arr.get(n).compareTo(arr.get(n-1) == -1) {
+					Collections.swap(arr, n, n-1);
+				}
+					
+			}
+		}
+				   
+		for(int i = 0; i<sisze; i++){
+			System.out.println(arr.get(i).toString());
+		}
+
 
 
 	}
